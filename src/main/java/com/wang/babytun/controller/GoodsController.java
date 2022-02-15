@@ -17,6 +17,9 @@ public class GoodsController {
         ModelAndView mav = new ModelAndView("goods");
         Goods goods= goodsService.getGoods(gid);
         mav.addObject("goods",goods);
+        mav.addObject("covers",goodsService.findCovers(gid));
+        mav.addObject("details",goodsService.findDetails(gid));
+        mav.addObject("params",goodsService.findParams(gid));
         return mav;
     }
 }
