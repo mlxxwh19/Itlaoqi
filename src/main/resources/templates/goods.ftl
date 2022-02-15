@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</title>
+    <title>${goods.title}</title>
     <link href="./layui/css/layui.css" rel="stylesheet">
     <script src="./layui/layui.all.js"></script>
     <style>
@@ -36,7 +36,7 @@
 <div class="layui-container" style="padding: 10px;border: 1px solid #ccc;background-color:white">
     <span class="layui-breadcrumb" style="visibility: visible;">
       <a href="/">首页</a><span lay-separator="">/</span>
-      <a><cite>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</cite></a>
+      <a><cite>${goods.title}</cite></a>
     </span>
     <div class="layui-row" style="padding-top: 10px">
         <div class="layui-col-xs4">
@@ -64,20 +64,20 @@
         <div class="layui-col-xs8" style="padding: 10px">
             <ul class="bb-info">
                 <li>
-                    <h2>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</h2>
+                    <h2>${goods.title}</h2>
                 </li>
 
                 <li class="layui-bg-green" style="padding:10px;line-height: 30px">
-                    哇爱实用型待产包，【尖叫升级】12件套送8件升级为20件套待产包【专家型】，甄选优质材料，无尘环境操作，医用全棉，柔软舒适，哺乳透气干爽，专注孕妈用品安全，产妇入院待产推荐。
+                    ${goods.subTitle}
                 </li>
 
                 <li style="color: darkgrey">
-                    <span>宝宝团价：</span><span style="font-size: 26px;color: orange;font-weight: bold">¥19.8</span><span
-                        style="text-decoration: line-through">¥78.0</span>
+                    <span>宝宝团价：</span><span style="font-size: 26px;color: orange;font-weight: bold">${goods.currentPrice?string('￥0.00')}</span><span
+                        style="text-decoration: line-through">${goods.originalCost}</span>
                 </li>
 
                 <li>
-                    <span>运费： 6.0元 满58.0元包邮</span>
+                    <span>运费： 6.0元 <#if goods.isFreeDelivery == 1>满58.0元包邮</#if></span>
                 </li>
                 <li>
                     数量：

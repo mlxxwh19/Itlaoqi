@@ -8,6 +8,15 @@ public class Goods {
     private Float discount;
     private Integer isFreeDelivery;
     private Long categoryId;
+    private Float currentPrice;
+
+    public void setCurrentPrice(Float currentPrice) {
+        this.currentPrice = currentPrice;
+    }
+
+    public Float getCurrentPrice() {
+        return currentPrice;
+    }
 
     public void setGoodsId(Long goodsId) {
         this.goodsId = goodsId;
